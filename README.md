@@ -21,6 +21,98 @@ int main() {
 
     return 0;
 }
+1002
+#include <stdio.h>
+int main()
+{
+    double A,R,n;
+    n=3.14159;
+    scanf("%lf",&R);
+    A=n*R*R;
+    printf("A=%.4lf\n",A);
+    return 0;
+}
+
+1003
+#include <stdio.h>
+int main()
+{
+    int A,B,x;
+    scanf("%d %d",&A,&B);
+    x=A+B;
+    printf("SOMA = %d\n",x);
+    return 0;
+}
+1004
+#include <stdio.h>
+int main()
+{
+    int A,B,x;
+    scanf("%d %d",&A,&B);
+    x=A*B;
+    printf("PROD = %d\n",x);
+    return 0;
+}
+1005
+#include <stdio.h>
+int main()
+{
+    double A,B,x,y;
+    scanf("%lf %lf",&A,&B);
+    x=A*3.5+B*7.5;
+    y=x/11;
+    printf("MEDIA = %.5lf\n",y);
+    return 0;
+}
+
+1006
+#include <stdio.h>
+int main()
+{
+    double A,B,C,x,y;
+    scanf("%lf %lf %lf",&A,&B,&C);
+    x=A*2+B*3+C*5;
+    y=x/10;
+    printf("MEDIA = %.1lf\n",y);
+    return 0;
+}
+1007
+#include <stdio.h>
+int main()
+{
+    int A,B,C,D,x;
+    scanf("%d %d %d %d",&A,&B,&C,&D);
+    x=(A*B)-(C*D);
+    printf("DIFERENCA = %d\n",x);
+    return 0;
+}
+1008
+#include <stdio.h>
+int main()
+{
+    int number,wh;
+    float pwh;
+    double ts;
+    scanf("%d %d %f",&number,&wh,&pwh);
+    printf("NUMBER = %d\n",number);
+    ts=wh*pwh;
+    printf("SALARY = U$ %.2lf\n",ts);
+    return 0;
+}
+
+1010
+#include<stdio.h>
+int main()
+{
+    int code1,unit1,code2,unit2;
+    float p1,p2,tp;
+    scanf("%d %d %f",&code1,&unit1,&p1);
+    scanf("%d %d %f",&code2,&unit2,&p2);
+
+    tp=(unit1*p1)+(unit2*p2);
+    printf("VALOR A PAGAR: R$ %.2f\n",tp);
+    return 0;
+}
 
 1052
 #include <stdio.h>
