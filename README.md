@@ -86,6 +86,33 @@ int main()
 }
 
 
+**Palindrome number**
+
+
+#include<stdio.h>
+int main()
+{
+    int n,tem,r,sum=0;
+    //printf("Enter any number ");
+    scanf("%c",&n);
+
+    tem=n;
+    while(n!=0)
+    {
+        r=tem%10;
+        n=sum*10+r;
+        tem=tem/10;
+    }
+    if(n==sum){
+        printf("Palindrome");
+        }
+    else{
+        printf("Not");
+       } 
+        return 0;
+
+}
+
 
 # beeecrowed
 1000
