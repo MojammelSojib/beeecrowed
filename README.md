@@ -185,6 +185,87 @@ int main()
     return 0;
 }
 
+**  Series – 1**
+#include<stdio.h>
+int main()
+{
+    int n,i,sum=0;
+    printf("Enter the last digit: ");
+    scanf("%d",&n);
+    printf("1+3+5+.....+%d",n);
+
+    for(i=1;i<=n;i=i+2)
+    {
+        sum=sum+i;
+    }
+    printf("=%d\n",sum);
+    return 0;
+}
+**  Series – 2**
+#include<stdio.h>
+int main()
+{
+    int n,a=1,sum=0;
+    printf("Enter the last digit: ");
+    scanf("%d",&n);
+    printf("1+2+3+.....+%d",n);
+
+   while(a<=n)
+    {
+        sum=sum+a;
+        a=a+1;
+    }
+    printf("=%d\n",sum);
+    return 0;
+}
+**SUM of Even Number**
+#include<stdio.h>
+int main()
+{
+    int i,n,sum=0;
+    printf("Entre your Number: ");
+    scanf("%d",&n);
+
+    for(i=2;i<=n;i=i+2)
+    {
+
+       printf("%d ",i);
+       sum=sum+i;
+    }
+    printf("\nSum = %d\n",sum);
+    return 0;
+
+}
+**Maximum and Minimum of Array**
+#include<stdio.h>
+
+int main() {
+    int num[1000], n, i;
+
+    printf("How many Numbers: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++) {
+        scanf("%d", &num[i]);
+    }
+
+    int max = num[0];
+    int maxIndex = 0;
+
+    for(i = 1; i < n; i++) {
+        if (max < num[i]) {
+            max = num[i];
+            maxIndex = i;
+        }
+    }
+
+    printf("Maximum variable = %d\n", max);
+    printf("Position (index) of maximum variable = %d\n", maxIndex+1);
+
+    return 0;
+}
+
+
 
 # beeecrowed
 1000
