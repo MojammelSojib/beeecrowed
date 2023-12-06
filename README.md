@@ -292,6 +292,43 @@ int main()
         printf("The poistion %d",pos);
     }
     return 0;
+    }
+
+    copy all elements of an array to another array
+
+#include<stdio.h>
+
+int main() {
+    int array1[50], array2[50], i, n;
+
+    printf("How many numbers: ");
+    scanf("%d", &n);
+
+    // Input elements for array1
+    printf("Array1: ");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &array1[i]);
+    }
+
+    // Display elements of array1
+    printf("Array1: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", array1[i]);
+    }
+
+    // Copy elements from array1 to array2
+    for (i = 0; i < n; i++) {
+        array2[i] = array1[i];
+    }
+
+    // Display elements of array2
+    printf("\nArray2: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", array2[i]);
+    }
+
+    return 0;
+}
 
 
 
