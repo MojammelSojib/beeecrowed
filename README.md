@@ -356,6 +356,62 @@ int main() {
     return 0;
 }
 
+Simple Matrix
+#include<stdio.h>
+
+int main() {
+    int i, j;
+    int A[3][4],B[3][4];
+
+    // Input A
+    printf("Enter elements For A Matrix. ");
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 4; j++)
+        {
+            printf("A[%d][%d]= ",i,j);
+            scanf("%d", &A[i][j]); // Add & before A[i][j]
+        }
+        printf("\n");
+    }
+
+    printf("A= ");
+    // Output for A matrix
+    for(i = 0; i < 3; i++)
+    {
+        printf("\t");
+        for(j = 0; j < 4; j++) {
+            printf("%d ", A[i][j]); // Print a space after each element
+        }
+        printf("\n"); // Add a newline after each row
+    }
+
+
+    // Input B
+    printf("Enter elements For b Matrix.");
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 4; j++)
+        {
+            printf("B[%d][%d]= ",i,j);
+            scanf("%d", &B[i][j]); // Add & before A[i][j]
+        }
+        printf("\n");
+    }
+
+    printf("B=");
+    // Output for A matrix
+    for(i = 0; i < 3; i++)
+    {
+        printf("\t");
+        for(j = 0; j < 4; j++) {
+            printf("%d ", B[i][j]); // Print a space after each element
+        }
+        printf("\n"); // Add a newline after each row
+    }
+
+    return 0;
+}
 
 # beeecrowed
 1000
