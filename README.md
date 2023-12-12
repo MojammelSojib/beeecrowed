@@ -62,7 +62,7 @@ int main()
 }
    or 
    
-**SUM of Even Number**
+//**SUM of Even Number**
 #include<stdio.h>
 int main()
 {
@@ -112,13 +112,13 @@ int main() {
 
 
 
-check prime number summaition
+(5)//check prime number summaition
 #include<stdio.h>
 int main()
 {
     int n,count=0,totalprime=0,sum=0;
 
-    for(n=1;n<=10000;n++){
+    for(n=1;n<=100;n++){
             count=0;
     if(n<=1){
             count=1;
