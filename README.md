@@ -1,4 +1,118 @@
-check prime number
+//check factorial number code
+
+#include<stdio.h>
+int main()
+{
+  int i,fact=1,n;
+  printf("Enter any positive number:");
+  scanf("%d",&n);
+
+  for(i=1;i<=n;i++)
+  {
+      fact =fact*i;
+  }
+  printf("%d\n",fact);
+  return 0;
+}
+//check prime or not
+
+#include<stdio.h>
+
+int main()
+{
+    int n, i, isprime = 1;
+    printf("Enter your number: ");
+    scanf("%d", &n);
+    
+    for (i = 2; i < n; i++) {
+        if (n % i == 0) {
+            isprime = 0;
+            break;
+        }
+    }
+
+    // Output based on the isprime flag
+    if (isprime == 1 && n > 1) {
+        printf("%d is Prime.\n", n);
+    } else {
+        printf("%d is not a prime number.\n", n);
+    }
+
+    return 0;
+}
+
+(3)//Write a program in C to find the summation of EVEN numbers between 1 
+to..100.
+
+#include<stdio.h>
+int main()
+{
+    int i,n,sum=0;
+    //printf("Entre your Number: ");
+    //scanf("%d",&n);
+
+    for(i=2;i<100;i=i+2)
+    {
+
+       printf("%d ",i);
+       sum=sum+i;
+    }
+    printf("\nSum = %d\n",sum);
+    return 0;
+}
+   or 
+   
+**SUM of Even Number**
+#include<stdio.h>
+int main()
+{
+    int i,n,sum=0;
+    printf("Entre your Number: ");
+    scanf("%d",&n);
+
+    for(i=2;i<=n;i=i+2)
+    {
+
+       printf("%d ",i);
+       sum=sum+i;
+    }
+    printf("\nSum = %d\n",sum);
+    return 0;
+
+}
+
+(4)**Maximum and Minimum of Array**
+#include<stdio.h>
+
+int main() {
+    int num[1000], n, i;
+
+    printf("How many Numbers: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++) {
+        scanf("%d", &num[i]);
+    }
+
+    int max = num[0];
+    int maxIndex = 0;
+
+    for(i = 1; i < n; i++) {
+        if (max < num[i]) {
+            max = num[i];
+            maxIndex = i;
+        }
+    }
+
+    printf("Maximum variable = %d\n", max);
+    printf("Position (index) of maximum variable = %d\n", maxIndex+1);
+
+    return 0;
+}
+
+
+
+check prime number summaition
 #include<stdio.h>
 int main()
 {
@@ -29,22 +143,7 @@ int main()
         return 0;
 
 }
-check factorial number code
 
-#include<stdio.h>
-int main()
-{
-  int i,fact=1,n;
-  printf("Enter any positive number:");
-  scanf("%d",&n);
-
-  for(i=1;i<=n;i++)
-  {
-      fact =fact*i;
-  }
-  printf("%d\n",fact);
-  return 0;
-}
 
 **sum of digits**
 #include<stdio.h>
@@ -218,52 +317,9 @@ int main()
     printf("=%d\n",sum);
     return 0;
 }
-**SUM of Even Number**
-#include<stdio.h>
-int main()
-{
-    int i,n,sum=0;
-    printf("Entre your Number: ");
-    scanf("%d",&n);
-
-    for(i=2;i<=n;i=i+2)
-    {
-
-       printf("%d ",i);
-       sum=sum+i;
-    }
-    printf("\nSum = %d\n",sum);
-    return 0;
 
 }
-**Maximum and Minimum of Array**
-#include<stdio.h>
 
-int main() {
-    int num[1000], n, i;
-
-    printf("How many Numbers: ");
-    scanf("%d", &n);
-
-    for(i = 0; i < n; i++) {
-        scanf("%d", &num[i]);
-    }
-
-    int max = num[0];
-    int maxIndex = 0;
-
-    for(i = 1; i < n; i++) {
-        if (max < num[i]) {
-            max = num[i];
-            maxIndex = i;
-        }
-    }
-
-    printf("Maximum variable = %d\n", max);
-    printf("Position (index) of maximum variable = %d\n", maxIndex+1);
-
-    return 0;
-}
 
 Array | Searching a number (Linear search)
 #include<stdio.h>
